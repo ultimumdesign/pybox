@@ -108,3 +108,6 @@ venv.bak/
 
 #db stuff
 dbconfig.py
+
+# mac stuff
+.DS_Store
