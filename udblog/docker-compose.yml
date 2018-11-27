@@ -1,0 +1,14 @@
+version: "2"
+services:
+  app:
+    build: app/.
+    links:
+      - db
+    ports:
+      - "5000:5000"
+  db:
+    build: db/.
+    volumes:
+      - /var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: supersecure
